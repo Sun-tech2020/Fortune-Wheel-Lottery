@@ -1,0 +1,5 @@
+{
+  "name": "Fortune Wheel Lottery",
+  "description": "A festive lottery application where you can upload an Excel list of candidates (Department, Name, ID) and spin a lucky wheel to pick a winner with high-quality animations and AI-generated celebratory messages.",
+  "requestFramePermissions": []
+}
