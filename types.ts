@@ -1,6 +1,5 @@
 
 export interface Candidate {
-  id: string; // 编号
   name: string; // 姓名
   department: string; // 部门
 }

@@ -162,7 +162,7 @@ const App: React.FC = () => {
             <ExcelUploader onDataLoaded={handleDataLoaded} />
             <div className="mt-8 p-6 bg-white/5 rounded-xl border border-white/10 text-center">
               <p className="text-indigo-200/60 text-sm leading-relaxed">
-                请上传一份包含“部门”、“姓名”、“编号”列的 Excel 文件。
+                请上传一份包含“部门”、“姓名”列的 Excel 文件。
                 <br />
                 数据上传后，部门将按指定顺序排列供您筛选。
               </p>

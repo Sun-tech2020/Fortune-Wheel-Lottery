@@ -32,18 +32,14 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ winner, onClose }) => {
         <div className="bg-slate-900 rounded-[calc(1.5rem-4px)] p-8 text-center">
           <h2 className="text-4xl font-chinese text-yellow-400 mb-6 drop-shadow-lg">🎉 恭喜中奖 🎉</h2>
           
-          <div className="space-y-4 mb-8 py-6 border-y border-white/10">
+          <div className="space-y-6 mb-8 py-8 border-y border-white/10">
             <div>
-              <p className="text-indigo-300 text-sm uppercase tracking-widest mb-1">所属部门</p>
+              <p className="text-indigo-300 text-sm uppercase tracking-widest mb-2">所属部门</p>
               <p className="text-2xl font-semibold text-white">{winner.department}</p>
             </div>
             <div>
-              <p className="text-indigo-300 text-sm uppercase tracking-widest mb-1">幸运中奖者</p>
-              <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500 font-chinese">{winner.name}</p>
-            </div>
-            <div>
-              <p className="text-indigo-300 text-sm uppercase tracking-widest mb-1">工号/编号</p>
-              <p className="text-2xl font-mono text-white">{winner.id}</p>
+              <p className="text-indigo-300 text-sm uppercase tracking-widest mb-2">幸运中奖者</p>
+              <p className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-500 font-chinese py-2">{winner.name}</p>
             </div>
           </div>
 
