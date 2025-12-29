@@ -5,7 +5,7 @@ import ExcelUploader from './components/ExcelUploader';
 import Wheel from './components/Wheel';
 import WinnerModal from './components/WinnerModal';
 
-const RESTRICTED_NAME = '孙卓群';
+const RESTRICTED_NAMES = ['孙卓群', '李柯颖', '张晓静'];
 const DEPARTMENT_ORDER = ["研究一部", "研究二部", "研究三部", "北京分部", "科研管理部", "综合部"];
 
 const App: React.FC = () => {
@@ -46,7 +46,7 @@ const App: React.FC = () => {
 
   // Candidates that can actually WIN (Excludes restricted names)
   const eligibleCandidates = useMemo(() => {
-    return filteredCandidates.filter(c => c.name !== RESTRICTED_NAME);
+    return filteredCandidates.filter(c => !RESTRICTED_NAMES.includes(c.name));
   }, [filteredCandidates]);
 
   const toggleDepartment = (dep: string) => {
